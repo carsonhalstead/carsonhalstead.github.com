@@ -53,10 +53,13 @@ table {
 
 /* END RESET */
 
-<style>
 
 h1	{
-	font-family:helvetica
+	font-family:helvetica;
+	line-height:1.4em;
 	}
-
-</style>
+	
+#outer > ul {
+	background-color:red;
+	
+	}
