@@ -56,10 +56,16 @@ table {
 
 h1	{
 	font-family:helvetica;
+	font-size:54px;
+	line-height:1.4em;
+	}
+h3	{
+	font-family:helvetica;
+	font-size:30px;
 	line-height:1.4em;
 	}
 	
-#outer > ul {
-	background-color:red;
-	
+#material > ul	{
+	background-color:#ffc961;
+	line-height:1.6em;
 	}
