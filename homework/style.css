@@ -52,6 +52,27 @@ body { font-family:Georgia; font-size:14px; }
 section#content { margin:0 auto; width:960px; padding:50px 50px; }
 a {text-decoration:none; color:#669933}
 
-h1 { font-family:Helvetica; text-transform:uppercase; font-size:50px; font-weight:bold; color:black;  }
-h2 { font-size:25px; font-weight:bold; color:black;  padding-top:30px;}
-p { font-size:20px; padding-top:10px; padding-left:50px; color:#cccccc;}
+h1 {
+	font-family: Papyrus, fantasy;
+	text-transform:uppercase;
+	font-size:50px;
+	font-weight:bold;
+	color:black;
+	}
+h2 { 
+	font-size:25px; 
+	font-weight:bold; 
+	color:black;  
+	padding-top:30px;
+	}
+p   { 
+	font-size:50px; 
+	padding-top:10px; 
+	padding-left:50px; 
+	color:#cccccc;
+	}
+a:hover
+	{
+	color:red;
+	}
+	
