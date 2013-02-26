@@ -48,31 +48,47 @@ table {
 }
 
 /* Add Styles Here */
-body { font-family:Georgia; font-size:14px; }
-section#content { margin:0 auto; width:960px; padding:50px 50px; }
-a {text-decoration:none; color:#669933}
+body
+	{
+	font-family: "Franklin Gothic Medium";
+	font-size:14px; 
+	font-weight:bold;
+	}
+section#content 
+	{ 
+	margin:0 auto;
+	width:960px;
+	padding:50px 50px;
+	text-shadow:3px 3px 3px #ddd; 
+	}
+a   {
+	text-decoration:none;
+	color:white;
+	}
 
-h1 {
-	font-family: Papyrus, fantasy;
+h1  {
+	font-family: "Franklin Gothic Medium";
 	text-transform:uppercase;
 	font-size:50px;
 	font-weight:bold;
-	color:black;
 	}
-h2 { 
-	font-size:25px; 
-	font-weight:bold; 
-	color:black;  
-	padding-top:30px;
+nav { 
+    top:20px;
+    right:20px;
+    float:bottom;
+    border-radius:5px;
+    padding:0 10px;
+    margin:0 20px;
 	}
-p   { 
-	font-size:50px; 
+li  { 
+	background-color:red;
+	font-size:21px;
 	padding-top:10px; 
-	padding-left:50px; 
-	color:#cccccc;
+	padding-left:10px;
+	margin:40px;
 	}
 a:hover
 	{
-	color:red;
+	color:#CCCCCC;
 	}
 	
