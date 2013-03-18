@@ -53,4 +53,44 @@ table {
 
 /* END RESET */
 
+img {
+		max-width: 40%;
+		height: auto;
+		padding: 0px 10px 15px 0px;
+		float: left;
+}
 
+h1 {
+		font-weight: bold;
+		font-size: 1.3em;
+		color: red;
+		padding-bottom: .5em;
+}
+
+h2 {
+		font-size: .75em;
+		color: #CCCCCC;
+		padding-bottom: 2em;
+}
+
+body {
+		font-family: helvetica;
+		padding: 4.5em;
+}
+
+p {
+		font-family: georgia;
+		font-size: 15px;
+		line-height: 1.2em;
+		padding-bottom: 10px;
+}
+
+section {
+		padding: 100px 100px 100px 100px;
+}
+
+article {
+		max-width: 350px;
+		float: left;
+		padding: 10px 10px 10px 10px;
+}
