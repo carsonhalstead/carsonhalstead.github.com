@@ -98,6 +98,8 @@ footer
 
 a:hover
 	{
-	color:#CCCCCC
+		text-shadow:-2px 2px -2px #993333;
+	color:white;
+
 	}
 	
