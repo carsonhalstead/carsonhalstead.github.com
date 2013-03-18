@@ -81,20 +81,23 @@ nav {
     margin:0 20px;
 	}
 li  { 
-	background-color:red;
-	font-size:21px;
-	padding-top:10px; 
-	padding-left:10px;
+	background-color:#FF3333;
+	font-size:41px;
+	padding-top:10px; padding-left:10px; padding-bottom: 15px;
 	margin:40px;
 	}
 footer 
 	{
+	background-color:#FF3333;
+	border-radius:10px;
 	font-family: "Franklin Gothic Medium";
-	font-size:80px;
-	position:absolute; top:120px; left: 450px;
+	font-size:26px;
+	padding:6px 12px 8px 12px;
+	position:absolute; top:158px; left: 1035px;
 	}
+
 a:hover
 	{
-	color:#CCCCCC;
+	color:#CCCCCC
 	}
 	
