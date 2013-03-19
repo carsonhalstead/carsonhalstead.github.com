@@ -1,5 +1,4 @@
 
-
 /* Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -50,3 +49,103 @@ table {
 	border-spacing: 0;
 }
 
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:960px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* END OF RESET */
+
+body {
+	width:100%;
+}
+
+#site-wrapper {
+	background-color:red;
+}
+
+header {
+	position:relative;
+	background-color:tan;
+	height:200px;
+	width:960px;
+	margin:0 auto;
+}
+header h1 {
+	position:absolute;
+	top:50px;
+	left:50px;
+	background-color:red;
+}
+header nav {
+	position:absolute;
+	background-color:teal;
+	right:10px;
+}
+
+#menu-wrapper {
+	background-color:chocolate;
+}
+
+#main-menu {
+	background-color:brown;
+	position:relative;
+	height: 45px;
+	width:960px;
+	margin:0 auto;
+}
+
+#main-menu li {
+	float:left;
+	background-color:yellow;
+	padding: 10px; margin:5px;
+}
+
+#content {
+	width:960px;
+	margin:0 auto;
+}
+
+#page {
+	float: left;
+	width: 60%;
+	background-color: green;
+}
+
+#sidebar {
+	float: left;
+	width:30%;
+	background-color:purple;
+}
+
+#site-footer {
+	position:relative;
+	bottom:0px;
+	clear:both;
+	background-color: aqua;
+	width:960px;
+	margin:0 auto;
+}
+
+#footer-wrapper {
+	clear:both;
+	background-color:cyan;
+	height:100px;
+}
