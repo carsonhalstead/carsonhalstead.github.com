@@ -53,19 +53,24 @@ table {
 
 /* END RESET */
 
+body {
+	width:1000px;
+	margin:0 auto;
+}
 
 h1	{
 	font-family:helvetica;
-	font-size:54px;
-	line-height:1.4em;
-	}
+	font-size:40px;
+}
 h3	{
 	font-family:helvetica;
 	font-size:30px;
 	line-height:1.4em;
-	}
+}
 	
 #material > ul	{
+	float:left;
+	width:600px;
 	background-color:#ffc961;
 	line-height:1.6em;
-	}
+}
