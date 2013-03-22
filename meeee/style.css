@@ -72,6 +72,10 @@ html[xmlns] .clearfix { display: block; }
 
 /* END RESET */
 
+#main {
+	max-width:600px;
+	margin:0 auto;
+}
 
 header {
 	height:140px;
