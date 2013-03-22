@@ -161,6 +161,10 @@ footer {
 	border-top:solid black 4px;
 }
 
+a:hover {
+	color:#BDC0C4;
+}
+
 a {
 	text-decoration:none;
 	color:black;
