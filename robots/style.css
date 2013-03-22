@@ -75,23 +75,31 @@ html[xmlns] .clearfix { display: block; }
 
 body {
 	width:100%;
+	font-family:helvetica;
+}
+
+#site-header h1 a {
+	display:block;
+	height:150px;
+	width:320px;
+	background:url('images/logo.png') no-repeat top left;
+	text-indent:-9999px;
 }
 
 #site-wrapper {
-	background-color:tan;
+	background-color:#FFFFCC;
 }
 
 header {
 	position:relative;
-	height:200px;
+	height:160px;
 	width:960px;
 	margin:0 auto;
 }
 header h1 {
 	position:absolute;
-	top:50px;
-	left:50px;
-	background-color:red;
+	top:15px;
+	left:35px;
 }
 header nav {
 	position:absolute;
@@ -100,7 +108,7 @@ header nav {
 }
 
 #menu-wrapper {
-	background-color:chocolate;
+	background-color:#996633;
 }
 
 #main-menu {
@@ -125,45 +133,106 @@ header nav {
 #page {
 	float: left;
 	width: 60%;
-	background-color: green;
+	padding-top:40px;
+	padding-bottom:30px;
+}
+
+#page h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	color:#996633;
+	padding-bottom:15px;
+}
+
+#page h2 {
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:.15em;
+	color:#996633;
+	padding-bottom:20px;
+}
+
+#page p {
+	font-size:15px;
+	line-height:1.3em;
+	padding-bottom:25px;
 }
 
 #sidebar {
-	float: left;
+	float:left;
 	width:30%;
-	background-color:purple;
+	font-family:helvetica;
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-left:60px;
+}
+
+#sidebar h1 {
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:.15em;
+	color:#996633;
+	padding-bottom:20px;
+}
+
+#sidebar ul {
+	padding-bottom:30px;
+	font-size:12px;
+	line-height:1.6em;
 }
 
 #site-footer {
 	position:relative;
 	bottom:0px;
 	clear:both;
-	background-color: aqua;
 	width:960px;
 	margin:0 auto;
 }
 
 #footer-wrapper {
 	clear:both;
-	background-color:cyan;
-	height:100px;
+	background-color:#996633;
+	height:180px;
+}
+
+#footer-wrapper h1 {
+	color:#FFFFCC;
+	font-family:helvetica;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:.15em;
+	padding-bottom:15px;
 }
 
 #footer-contact {
 	float:left;
 	width:20%;
-	background-color:pink;
+	padding-top:30px;
+}
+
+#footer-contact p {
+	color:white;
+	font-size:12px;
+	font-family:helvetica;
+	line-height:1.3em;
 }
 
 #footer-follow {
 	float:left;
 	width:20%;
-	padding-left:450px;
-	background-color:green;
+	padding-top:30px;
+	padding-left:495px;
+}
+
+#footer-follow h1 {
+	padding-left:32px;
 }
 
 #footer-follow li {
 	float:left;
 	width:60px;
-	background-color:yellow;
+}
+
+a {
+	text-decoration:none;
 }
