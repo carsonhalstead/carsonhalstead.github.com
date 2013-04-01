@@ -67,7 +67,7 @@ a   {
 	}
 
 h1  {
-	font-family: "Franklin Gothic Medium";
+	font-family:"Franklin Gothic Medium";
 	text-transform:uppercase;
 	font-size:50px;
 	font-weight:bold;
@@ -90,7 +90,7 @@ footer
 	{
 	background-color:#FF3333;
 	border-radius:10px;
-	font-family: "Franklin Gothic Medium";
+	font-family:"Franklin Gothic Medium";
 	font-size:26px;
 	padding:6px 12px 8px 12px;
 	position:absolute; top:130px; left: 70px;
