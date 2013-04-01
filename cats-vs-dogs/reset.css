@@ -141,6 +141,14 @@ section {
 	margin-bottom:25px;
 }
 
+h1 {
+	position:absolute;
+	left:280px;
+	top:45px;
+	font-family: 'LeagueGothicRegular';
+	font-size:7.3em;
+	text-transform:uppercase;
+}
 
 h2 {
 	font-family: 'LeagueGothicRegular';
