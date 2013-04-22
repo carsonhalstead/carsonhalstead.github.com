@@ -116,8 +116,21 @@ header h1 {
 	width:20%;
 	position:fixed;
 	left:0;
-	top:6em;
-	margin:6em 0 0 3em;
+	margin:15% 0 0 5%;
+}
+
+#work {
+	text-transform:uppercase;
+}
+
+nav h2 {
+	margin-bottom:4em;
+}
+
+nav h3 {
+	margin-top: 10em;
+	text-transform:uppercase;
+	font-size:.7em;
 }
 
 
@@ -126,7 +139,17 @@ header h1 {
 .work {
 	float:left;
 	width:60%;
-	margin-left:30%;
+	margin:15% 0 0 26%;
+}
+
+.big-shot {
+	float:left;
+	width:100%;
+}
+
+.project-description {
+	float:left;
+	width:30%;
 }
 
 
