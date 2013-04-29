@@ -77,7 +77,7 @@ html[xmlns] .clearfix { display: block; }
 
 
 body {
-	width:75%;
+	width:80%;
 	margin:0 auto;
 }
 
@@ -93,8 +93,10 @@ header {
 
 article {
 	float:left;
-	width:40%;
-	margin:3%
+	width:48%;
+	margin:1%;
+	padding-top:3%;
+	padding-bottom:7%
 }
 
 img {
@@ -124,6 +126,8 @@ p {
 #nav {
 	border-top:solid black 4px;
 	border-bottom:solid black 4px;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
 ul {
@@ -166,8 +170,25 @@ li {
 
 footer {
 	clear:both;
-	font-size:.8em;
+	font-size:.6em;
 	border-top:solid black 2px;
+}
+
+#sources p {
+	padding-top:25px;
+	padding-bottom:10px;
+}
+
+#stuff {
+	float:left;
+	width:24em;
+	margin-left:0px;
+}
+
+#things {
+	float:right;
+	width:12em;
+	text-align:right;
 }
 
 a:hover {
