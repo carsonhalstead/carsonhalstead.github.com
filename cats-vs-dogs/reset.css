@@ -76,14 +76,67 @@ html[xmlns] .clearfix { display: block; }
 /* END OF RESET */
 
 
-body {
-	width:80%;
-	margin:0 auto;
+/*-----LOGO-----*/
+
+#logo {
+	margin-right:auto;
+	margin-left:auto;
+	padding-top:100px;
+	padding-bottom:40px;
+	text-align:center;
 }
+
+.d, .c {
+	font-family:'LeagueGothicRegular';
+	font-size:8em;
+	padding-top:10%;
+	text-transform:uppercase;
+}
+
+.vs {
+	font-family:georgia;
+	font-style:italic;
+	font-size:4em;
+	color:#BDC0C4;
+	border-top:4px double;
+	border-bottom:4px double;
+	margin-bottom:2em;
+}
+
+
+/*-----NAV-----*/
 
 header {
 	position:relative;
 	height:auto;
+}
+
+#nav {
+	border-top:solid black 4px;
+	border-bottom:solid black 4px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+ul {
+	text-align:center;
+}
+
+li {
+	display:inline;
+	margin:3%;
+	font-family:georgia;
+	font-size:1.3em;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+
+/*-----CONTENT-----*/
+
+body {
+	width:80%;
+	margin:0 auto;
 }
 
 #content {
@@ -123,50 +176,8 @@ p {
 	line-height:1.3em;
 }
 
-#nav {
-	border-top:solid black 4px;
-	border-bottom:solid black 4px;
-	padding-top:20px;
-	padding-bottom:20px;
-}
 
-ul {
-	text-align:center;
-}
-
-li {
-	display:inline;
-	margin:3%;
-	font-family:georgia;
-	font-size:1.3em;
-	font-weight:bold;
-	text-transform:uppercase;
-}
-
-#logo {
-	margin-right:auto;
-	margin-left:auto;
-	padding-top:100px;
-	padding-bottom:40px;
-	text-align:center;
-}
-
-.d, .c {
-	font-family:'LeagueGothicRegular';
-	font-size:8em;
-	padding-top:10%;
-	text-transform:uppercase;
-}
-
-.vs {
-	font-family:georgia;
-	font-style:italic;
-	font-size:4em;
-	color:#BDC0C4;
-	border-top:4px double;
-	border-bottom:4px double;
-	margin-bottom:2em;
-}
+/*-----FOOTER-----*/
 
 footer {
 	clear:both;
@@ -190,6 +201,9 @@ footer {
 	width:12em;
 	text-align:right;
 }
+
+
+/*-----TEXT/OTHER-----*/
 
 a:hover {
 	color:#BDC0C4;
