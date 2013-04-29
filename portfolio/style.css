@@ -85,8 +85,8 @@ html[xmlns] .clearfix { display: block; }
 }
 
 #personal-nav {
-	float:left;
-	margin:4em 0 0 45em;
+	float:right;
+	margin:4em 3em 0 0;
 	padding-top:.25em;
 }
 
@@ -144,7 +144,7 @@ nav h3 {
 
 .big-shot {
 	float:left;
-	width:100%;
+	width:450px;
 }
 
 .project-description {

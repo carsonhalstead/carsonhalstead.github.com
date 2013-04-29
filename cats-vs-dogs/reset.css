@@ -77,74 +77,32 @@ html[xmlns] .clearfix { display: block; }
 
 
 body {
-	position:relative;
-	width:1000px;
+	width:75%;
 	margin:0 auto;
 }
 
 header {
 	position:relative;
-	height:250px;
+	height:auto;
 }
 
-header img {
-	position:absolute;
-	left:280px;
-	top:50px;
-
-}
-
-nav {
-	position:absolute;
-	top:170px;
-	width:1000px;
-}
-
-#nav ul {
-	height:56px;
-	border-top:solid black 4px;
-	border-bottom:solid black 4px;
-	padding-left:160px;
-}
-
-#nav li {
-	float:left;
-	padding: 15px;
-	font-family:georgia;
-	font-size:1.6em;
-	font-weight:bold;
-	text-transform:uppercase;
-}
-
-section {
-	position:relative;
+#content {
+	width:80%;
 	margin:0 auto;
 }
 
-#dogs {
+article {
 	float:left;
-	width:452px;
-	margin:22px;
+	width:40%;
+	margin:3%
 }
 
-#cats {
-	float:left;
-	width:451px;
-	margin:22px;
-}
-
-#dog {
-	margin-bottom:25px;
-}
-
-#cat {
-	margin-bottom:25px;
+img {
+	max-width:100%;
 }
 
 h1 {
-	position:absolute;
-	left:280px;
-	top:45px;
+	float:left;
 	font-family: 'LeagueGothicRegular';
 	font-size:7.3em;
 	text-transform:uppercase;
@@ -163,10 +121,53 @@ p {
 	line-height:1.3em;
 }
 
+#nav {
+	border-top:solid black 4px;
+	border-bottom:solid black 4px;
+}
+
+ul {
+	text-align:center;
+}
+
+li {
+	display:inline;
+	margin:3%;
+	font-family:georgia;
+	font-size:1.3em;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#logo {
+	margin-right:auto;
+	margin-left:auto;
+	padding-top:100px;
+	padding-bottom:40px;
+	text-align:center;
+}
+
+.d, .c {
+	font-family:'LeagueGothicRegular';
+	font-size:8em;
+	padding-top:10%;
+	text-transform:uppercase;
+}
+
+.vs {
+	font-family:georgia;
+	font-style:italic;
+	font-size:4em;
+	color:#BDC0C4;
+	border-top:4px double;
+	border-bottom:4px double;
+	margin-bottom:2em;
+}
+
 footer {
 	clear:both;
-	height:100px;
-	border-top:solid black 4px;
+	font-size:.8em;
+	border-top:solid black 2px;
 }
 
 a:hover {
