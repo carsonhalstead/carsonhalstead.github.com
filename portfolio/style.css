@@ -73,27 +73,34 @@ html[xmlns] .clearfix { display: block; }
 
 /* END OF RESET */
 
-/* -- header navigation -- */
+
+#wrapper {
+	width:88%;
+	margin:0 auto;
+}
+
+/* -- Navigation-Header -- */
 
 .site-wrapper {
 	height:6em;
-	width:100%;
-	position:fixed;
-	top:0;
+	margin-left:auto;
+	margin-right:auto;
 	background-color:white;
 	border-bottom:1px dotted;
 }
 
 #personal-nav {
-	float:right;
-	margin:4em 3em 0 0;
-	padding-top:.25em;
+	float:left;
+	width:30%;
+	margin-top:4em;
+	margin-left:75%;
 }
 
 #personal-nav li {
 	text-transform:uppercase;
 	float:left;
-	padding:0 1.4em 0 1.4em;
+	display:inline;
+	margin:3%;
 }
 
 header {
@@ -105,21 +112,21 @@ header h1 {
 	width:6em;
 	background:url("images/halstead.jpg") no-repeat;
 	text-indent:-9999px;
-	margin:4em 0 0 3em;
+	margin-top:4em;
 }
 
 
-/* -- side navigation -- */
+/* -- Navigation-Sidebar -- */
 
 .project-list {
+	background-color:white;
 	height:100%;
 	width:20%;
 	position:fixed;
-	left:0;
-	margin:15% 0 0 5%;
+	margin-top:5%;
 }
 
-#work {
+.work {
 	text-transform:uppercase;
 }
 
@@ -134,26 +141,54 @@ nav h3 {
 }
 
 
-/* -- content -- */
+/* -- Main Content -- */
 
-.work {
+#work {
 	float:left;
-	width:60%;
-	margin:15% 0 0 26%;
+	width:74%;
+	margin:6% 0 0 26%;
+}
+
+/* -- Project Specs -- */
+
+.title-wrapper {
+	float:left;
+	width:63%;
 }
 
 .big-shot {
 	float:left;
-	width:450px;
+	max-width:100%;
+	margin-bottom: 6%;
+}
+
+#thumb {
+	max-width:100%;
 }
 
 .project-description {
-	float:left;
-	width:30%;
+	float:right;
+	width:33%;
+	margin-left:3%;
 }
 
+.project-description h1 {
+	font-size:1.5em;
+	margin-bottom:10%;
+}
 
-/* -- footer -- */
+.small-shot {
+	float:right;
+	width:33%;
+	margin-left:3%;
+}
+
+#thumb {
+	margin-top:20%;
+	margin-right:2%
+}
+
+/* -- Footer -- */
 
 footer {
 	height:20px;
@@ -167,7 +202,6 @@ footer p {
 	font-size:.7em;
 	color:#b7b7b7;
 	margin-top:.4em;
-	margin-left:3em;
 }
 
 a {
