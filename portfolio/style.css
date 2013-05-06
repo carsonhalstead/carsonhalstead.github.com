@@ -159,6 +159,7 @@ header h1 {
 }
 
 .project-description h1 {
+	padding-top:10%;
 	font-size:1.5em;
 	margin-bottom:5%;
 }
