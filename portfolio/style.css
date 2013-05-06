@@ -178,21 +178,19 @@ header h1 {
 
 .contact-info {
 	float:left;
-	margin-top:6em;
+	margin-top:10%;
 }
 
 #top {
 	font-size: 1.5em;
 	float:left;
 	max-width:33%;
-	margin-top:5%;
-	margin-left:33%;
 	color:red;
 }
 
 #information {
 	float:left;
-	max-width:74%;
+	max-width:100%;
 	margin:6 0 0 26%;
 	text-align:right;
 }
@@ -208,12 +206,15 @@ header h1 {
 
 /*---------- BOUT THAT PAGE ----------*/
 
+#about-me {
+	float:left;
+	margin-top:10%;
+}
+
 #about-me h1 {
 	font-size: 1.5em;
 	float:left;
 	max-width:33%;
-	margin-top:5%;
-	margin-left:33%;
 	color:red;
 }
 
@@ -221,7 +222,6 @@ header h1 {
 	float:left;
 	max-width:33%;
 	margin-top:6%;
-	margin-left:33%;
 }
 
 /* -- Footer -- */
