@@ -136,9 +136,9 @@ header h1 {
 /* -- Main Content -- */
 
 #work {
-	float:right;
-	width:74%;
-	margin-top:16%;
+	float:left;
+	width:100%;
+	margin-top:10%;
 }
 
 /* -- Project Specs -- */
@@ -148,21 +148,19 @@ header h1 {
 	width:63%;
 }
 
-.big-shot img {
+.big-shot {
 	float:left;
-	max-width:67%;
-	margin-bottom:6%;
+	margin:0 auto;
 }
 
 .project-description {
-	float:right;
-	width:33%;
-	margin-left:3%;
+	float:left;
+	width:100%;
 }
 
 .project-description h1 {
 	font-size:1.5em;
-	margin-bottom:10%;
+	margin-bottom:5%;
 }
 
 .project-info {

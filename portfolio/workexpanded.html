@@ -8,6 +8,7 @@
   	<![endif]-->
 <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="src/smoothscroll.js"></script>
 <link rel="stylesheet" href="jquery.fancybox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="jquery.fancybox.pack.js"></script>
 	
@@ -45,12 +46,12 @@
 
 		<nav id="pulled-down">
 				<ul id="projects">
-					<li><a id="#" href="#">The Mainline El</a></li>
-					<li><a id="#" href="#">Joseph's Pizzeria</a></li>
-					<li><a id="#" href="#">Card Sorting App</a></li>
-					<li><a id="#" href="#">111 Business Cards</a></li>
-					<li><a id="#" href="#">How to Make a Martini</a></li>
-					<li><a id="#" href="#">Train Timetable</a></li>
+					<li><a href="#mainline" class="smoothScroll">The Mainline El</a></li>
+					<li><a href="#josephs" class="smoothScroll">Joseph's Pizzeria</a></li>
+					<li><a href="#app" class="smoothScroll">Card Sorting App</a></li>
+					<li><a href="#111cards" class="smoothScroll">111 Business Cards</a></li>
+					<li><a href="#martini" class="smoothScroll">How to Make a Martini</a></li>
+					<li><a href="#train" class="smoothScroll">Train Timetable</a></li>
 				</ul>
 		</nav>
 	</header>
@@ -62,15 +63,11 @@
 
 	<!-- project one -->
 
+	<div id="mainline">
 		<div class="project-content">
-
-			<section class="big-shot">
-				<img src="images/image-frame.jpg" alt="large-image"/>
-			</section>
 
 			<section class="project-description">
 				<h1 id="title-one">The Mainline El</h1>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 			</section>
 
 			<section class="project-info">
@@ -79,7 +76,12 @@
 				<p>Maecenas a metus ante, in congue elit. Donec hendrerit nibh et metus blandit convallis ornare magna commodo. Fusce at sem enim, vel varius arcu. Ut et tellus sit amet odio porta luctus.</p>
 			</section>
 
+			<section class="big-shot">
+				<img src="images/image-frame.jpg" alt="large-image"/>
+			</section>
+
 		</div>
+	</div>
 
 
 	<!--  end project one -->
