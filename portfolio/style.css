@@ -75,8 +75,16 @@ html[xmlns] .clearfix { display: block; }
 
 
 #wrapper {
-	width:88%;
 	margin:0 auto;
+	width:80%;
+	min-height:100%;
+	position:relative;
+}
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
 }
 
 body {
@@ -84,170 +92,116 @@ body {
 	font-family:tahoma;
 }
 
-/* -- Navigation-Header -- */
+nav {
+	text-transform:uppercase;
+}
 
-header {
+#header {
+	padding:10px;
+}
+
+#body {
+	padding:10px;
+	padding-bottom:40px;
+}
+
+#column-1 {
 	position:fixed;
-	text-align:left;
-	width:88%;
-	background-color:white;
-	height:6em;
-	border-bottom:1px dotted;
-}
-
-header h1 {
 	float:left;
-	width:60%;
-	margin-top:3.2em;
+	width:150px;
+	height:200px;
+	margin-top:4em;
 }
 
-.top-nav {
-	float:right;
-	width:28%;
-	margin-top:3.2em;
+.sub-menu li {
+	margin-bottom:1em;
 }
 
-#pulled-down {
+#main-menu .sub-menu {
+	margin-top:2em;
+}
+
+#project-menu .sub-menu {
+	margin-top:3em;
+}
+
+#column-2 {
+	position:fixed;
+	margin-left:150px;
+	width:250px;
+	margin-top:4em;
+}
+
+#contact-info {
+	margin-top:12em;
 	float:left;
-	width:100%;
-	height:2.6em;
-	margin-top:1.8em;
-	background-color:white;
-	border-top:1px dotted;
-	border-bottom:1px dotted;
+	width:400px;
 }
 
-#projects li {
+#contact-info p {
+	margin-bottom:.6em;
+}
+
+#about-info {
+	margin-top:12em;
 	float:left;
-	font-size:.9em;
-	text-align:center;
-	margin-right:6.4%;
-	margin-top:1em;
+	width:300px;
 }
-
-#personal li {
-	float:left;
-	width:3em;
-	text-align:center;
-	margin-right:8.5%;
-	font-size:.9em;
-}
-
-/* -- Main Content -- */
 
 #work {
 	float:left;
-	width:100%;
-	margin-top:10%;
+	width:600px;
+	margin-left:35em;
+	padding-top:7.3em;
 }
 
-/* -- Project Specs -- */
-
-.title-wrapper {
-	float:left;
-	width:63%;
+#work p {
+	margin-top:2em;
 }
 
-.big-shot {
-	float:left;
-	margin:0 auto;
+h1 {
+	font-size:1.7em;
 }
 
-.project-description {
-	float:left;
-	width:100%;
+#info {
+	position:fixed;
+	width:200px;
+	margin-top:40em;
+	margin-left:150px;
 }
 
-.project-description h1 {
-	padding-top:10%;
-	font-size:1.5em;
-	margin-bottom:5%;
+#info p {
+	margin-top:2em;
+	line-height:
 }
 
-.project-info {
-	float:left;
-	margin-bottom:6%;
-}
-
-.project-info p {
-	float:left;
-	max-width:30%;
-	margin-right:3.3%
-}
-
-/*---------- CONTACT PAGE ----------*/
-
-.contact-info {
-	float:left;
-	margin-top:10%;
-}
-
-#top {
-	font-size: 1.5em;
-	float:left;
-	max-width:33%;
-	color:red;
-}
-
-#information {
-	float:left;
-	max-width:100%;
-	margin:6 0 0 26%;
-	text-align:right;
-}
-
-#information h1 {
-	font-size:2em;
-	margin:5% 0 7%;
-}
-
-#information h3 {
-	margin-top:38%;
-}
-
-/*---------- BOUT THAT PAGE ----------*/
-
-#about-me {
-	float:left;
-	margin-top:10%;
-}
-
-#about-me h1 {
-	font-size: 1.5em;
-	float:left;
-	max-width:33%;
-	color:red;
-}
-
-#about-me p {
-	float:left;
-	max-width:33%;
-	margin-top:6%;
+#info h2 {
+	text-transform:uppercase;
 }
 
 /* -- Footer -- */
 
 footer {
 	clear:both;
-	position:fixed;
-	left:0px;
-	bottom:0px;
-	height:2em;
+	position:absolute;
+	bottom:0;
+	height:25px;
 	width:100%;
 	border-top:1px dotted;
-	background-color:white;
 }
 
 footer p {
-	margin-left:29%;
-	margin-top:1em;
+	text-align:center;
+	width:100%;
+	position:absolute;
+	padding-top:.7em;
 	font-size:.75em;
 	color:#b7b7b7;
 }
 
 footer span{
+	margin-right:10%;
 	text-align:center;
-	margin-right:20%;
 }
 
 a {
