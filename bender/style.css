@@ -1,0 +1,81 @@
+
+
+.antennae {
+position: absolute;
+width: 15px;
+height: 60px;
+background-color: gray;
+left: 173px
+}
+
+.head {
+position: absolute;
+width: 160px;
+height: 320px;
+background-color: gray;
+border-radius: 75px 75px 0px 0px;
+top: 50px;
+left: 100px;
+}
+
+.eye-socket {
+position: absolute;
+width: 180px;
+height: 75px;
+background-color: blue;
+top: 125px;
+left: -18px;
+border-radius: 50px;
+border: 8px solid gray;
+}
+
+.eye-left {
+position: absolute;
+width: 70px;
+height: 40px;
+background-color: yellow;
+border-radius:0px 0px 100px 100px;
+border-top:none;
+top: 30px;
+left: 10px;
+-webkit-transform: rotate(6deg);
+}
+
+.eye-right {
+position: absolute;
+width: 70px;
+height: 40px;
+background-color: yellow;
+border-radius:0px 0px 100px 100px;
+border-top:none;
+top: 30px;
+left: 100px;
+-webkit-transform: rotate(-6deg);
+}
+.pupils {
+position: absolute;
+width: 15px;
+height: 12px;
+background-color: blue;
+top: 0px;
+left: 30px;
+}
+
+.mouth {
+position: absolute;
+width: 145px;
+height: 60px;
+background-color: yellow;
+top: 245px;
+left: 5px;
+border-radius: 50px;
+border: 3px solid black;
+}
+
+.teeth {
+position: absolute;
+width: 5px;
+height: 60px;
+background-color: black;
+left: 69px;
+}
