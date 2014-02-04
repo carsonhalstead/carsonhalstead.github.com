@@ -22,7 +22,7 @@ left: 100px;
 position: absolute;
 width: 180px;
 height: 75px;
-background-color: blue;
+background-color: black;
 top: 125px;
 left: -18px;
 border-radius: 50px;
@@ -52,12 +52,13 @@ top: 30px;
 left: 100px;
 -webkit-transform: rotate(-6deg);
 }
+
 .pupils {
 position: absolute;
 width: 15px;
 height: 12px;
-background-color: blue;
-top: 0px;
+background-color: black;
+top: -1px;
 left: 30px;
 }
 
@@ -79,3 +80,4 @@ height: 60px;
 background-color: black;
 left: 69px;
 }
+
