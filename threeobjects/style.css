@@ -1,0 +1,85 @@
+.case {
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	background-color: black;
+	border-radius: 25px 25px;
+	top: 25px;
+}
+
+.handle {
+	position: absolute;
+	width: 64px;
+	height: 40px;
+	background-color: black;
+	border-radius: 18px 18px;
+	top: -15px;
+	left: 68px;
+}
+
+.inside {
+	position: absolute;
+	width: 40px;
+	height: 10px;
+	background-color: white;
+	border-radius: 20px 20px 0 0;
+	top: 5px;
+	left: 12px;
+}
+
+.fastener {
+	position: absolute;
+	width: 8px;
+	height: 150px;
+	background-color: white;
+	left: 46px;
+}
+
+.fastener:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 150px;
+	background-color: white;
+	left: 100px;
+}
+
+.top {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 35px 25px 0 25px;
+	top: -2px;
+	left: -2px;
+}
+
+.top:after {
+	content: "";
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 25px 35px 25px 0;
+	left: 159px;
+}
+
+.bottom {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 25px 0 25px 35px;
+	top: 107px;
+	left: -2px;
+}
+
+.bottom:after {
+	content:"";
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 0 25px 35px 25px;
+	left: 159px;
+}
