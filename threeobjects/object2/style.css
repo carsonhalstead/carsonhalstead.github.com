@@ -87,6 +87,18 @@ body {
   	left: 160px;
 }
 
+.tongue {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	top: 150px;
+	left: 50px;
+}
+
 .teeth {
 	position: absolute;
 	width: 0;
