@@ -1,9 +1,27 @@
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes point-wiggle {
 	0% { -webkit-transform: rotate(0deg); }
-	50% { -webkit-transform: rotate(-10deg); }
+	25% { -webkit-transform: rotate(-10deg); }
+	50% { -webkit-transform: rotate(-5deg); }
 	75% { -webkit-transform: rotate(-10deg); }
 	100% { -webkit-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes middle-wiggle {
+	0% { -webkit-transform: rotate(0deg); }
+	25% { -webkit-transform: rotate(10deg); }
+	50% { -webkit-transform: rotate(5deg); }
+	75% { -webkit-transform: rotate(10deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes bounce {
+	0% { -webkit-transform: translate3d(0, 0px, 0); }
+	50% { -webkit-transform: translate3d(0, 0px, 0);
+		-webkit-animation-timing-function: ease-out; }
+	75% { -webkit-transform: translate3d(0, -5px, 0); 
+		-webkit-animation-timing-function: ease-in; }
+	100% { -webkit-transform: translate3d(0, 0px, 0); }
 }
 
 #content {
@@ -15,6 +33,7 @@
 	top: 50%;
 	left: 50%;
 	text-align: center;
+	-webkit-animation: bounce .5s infinite;
 }
 
 .palm {
@@ -35,7 +54,7 @@
 	-webkit-transform-origin: bottom;
 	border-radius: 20px 20px;
 	top: 15px;
-	-webkit-animation: wiggle 3s ease 1s infinite alternate;
+	-webkit-animation: point-wiggle 3s ease 1s infinite normal;
 }
 
 .middle {
@@ -47,7 +66,8 @@
 	-webkit-transform-origin: bottom;
 	border-radius: 20px 20px;
 	top: 10px;
-	left: 42px;
+	left: 48px;
+	-webkit-animation: middle-wiggle 3s ease 1s infinite normal;
 }
 
 .thumb {
