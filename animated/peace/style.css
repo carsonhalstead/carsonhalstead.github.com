@@ -1,3 +1,11 @@
+
+@-webkit-keyframes wiggle {
+	0% { -webkit-transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(-10deg); }
+	75% { -webkit-transform: rotate(-10deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
 #content {
 	width: 50%;
 	height: 30%;
@@ -21,23 +29,25 @@
 .pointer {
 	position: absolute;
 	width: 48px;
-	height: 160px;
+	height: 170px;
 	background-color: black;
 	-webkit-transform: rotate(-10deg);
+	-webkit-transform-origin: bottom;
 	border-radius: 20px 20px;
 	top: 15px;
-	left: -9px;
+	-webkit-animation: wiggle 3s ease 1s infinite alternate;
 }
 
-.pointer:after {
-	content: "";
+.middle {
 	position: absolute;
 	width: 48px;
-	height: 180px;
+	height: 170px;
 	background-color: black;
-	-webkit-transform: rotate(23deg);
+	-webkit-transform: rotate(15deg);
+	-webkit-transform-origin: bottom;
 	border-radius: 20px 20px;
-	left: 72px;
+	top: 10px;
+	left: 42px;
 }
 
 .thumb {
