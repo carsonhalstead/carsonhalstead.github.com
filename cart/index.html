@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<body>
+
+<style>
+
+body {
+	font-family: courier;
+}
+
+#cart {
+	width:400px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+p {
+	text-align: center;
+	padding-bottom: 6px;
+	border-bottom: 1px solid gray;
+}
+
+h2 {
+	width:400px;
+	text-align: center;
+}
+
+.name {
+	float: left;
+	width: 60%;
+}
+
+#subtotal {
+	float: left;
+	width: 400px;
+	text-align: right;
+}
+
+#buttons {
+	width: 400px;
+}
+
+.add {
+	width: 126px;
+	height: 100px;
+}
+
+
+</style>
+
+	<h2>Shopping Cart</h2>
+
+	<div id="cart">
+
+		<p>You have <span id="counter">3</span> item(s) in your cart.</p>
+
+	</div>
+
+	<div id="subtotal">
+
+		<h3>Total: $<span class="total">88</span></h3>
+
+	</div>
+
+	<div id="buttons">
+
+		<button class="add" data-item="Shirt">Shirt</button>
+		<button class="add" data-item="Hat">Hat</button>
+		<button class="add" data-item="Deck">Deck</button>
+
+	</div>
+	
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+
+var price = {"Shirt" : 18, "Hat" : 20, "Deck" : 50}
+
+function showItem(name, price) {
+	var item = $("<div class='item'>");
+
+	item.append( $("<div class='name'>").text(name) );
+	item.append( $("<div class='price'>").text("$" + price) );
+
+	$("#cart").append(item);
+	}
+
+	showItem("Shirt", 18);
+    showItem("Hat", 20);
+    showItem("Deck", 50);
+
+$(function () {
+	var addSomething = 3;
+
+	$(".add").click(function showItem(name, price) {
+		var item = $("<div class='item'>");
+
+		item.append( $("<div class='name'>").text(name) );
+		item.append( $("<div class='price'>").text("$" + price) );
+
+		$("#counter").html(addSomething += 1);
+    	alert("You've added a " + name);
+    	$("#cart").append(item);
+	});
+});
+
+$(function () {
+	var addCost = 88;
+
+	$(".add").click(function() {
+	$(".total").html(addCost += price);
+	});
+}); 
+
+</script>
+
+</body>
+</html>
