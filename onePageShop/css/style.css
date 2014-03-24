@@ -81,7 +81,6 @@ html[xmlns] .clearfix { display: block; }
 }
 
 body {
-	margin: -8px;
 	font-family: sans-serif, helvetica;
 }
 
@@ -317,6 +316,7 @@ img {
 	height: 460px;
 	border-top: 10px solid black;
 	border-bottom: 10px solid black;
+	display: none;
 }
 
 #detail-shot img {
