@@ -333,6 +333,8 @@ img {
 	float: left;
 	width: 240px;
 	font-size: 11px;
+	line-height: 1.2em;
+	margin-top: 40px;
 }
 
 .product-title {
@@ -348,6 +350,7 @@ img {
 
 #detail-components {
 	float: left;
+	margin-top: 40px;
 	margin-left: 120px;
 }
 
