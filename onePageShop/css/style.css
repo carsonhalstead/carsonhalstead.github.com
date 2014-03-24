@@ -1,3 +1,78 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:960px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* END OF RESET */
+
 /*--- Default State Shop ---*/
 
 #page {
@@ -6,6 +81,7 @@
 }
 
 body {
+	margin: -8px;
 	font-family: sans-serif, helvetica;
 }
 
@@ -22,27 +98,50 @@ a {
 
 /*--- Header ---*/
 
-#header {
+#navigation {
+	position: fixed;
+	top: 0;
+	width: 960px;
+	height: 70px;
+	background-color: white;
+	opacity: 0.9;
+}
+
+#navigation a:hover {
+	color: #363636;
+}
+
+.main-nav ul {
+	clear: both;
 	float: left;
-	width: 480px;
-	height: 210px;
+	width: 240px;
 }
 
 #logo {
 	float: left;
-	margin-top: 40px;
-	margin-left: 40px;
+	width: 480px;
+	margin-top: 20px;
 }
 
-.main-nav ul {
-	float: left;
-	margin-top: 30px;
+#logo img {
+	padding-left: 180px;
+}
+
+.right-nav li {
+	float: right;
+	width: 240px;
+	text-align: right;
 }
 
 .main-nav li {
-	padding: .8em;
+	float: left;
+}
+
+.main-nav li, .right-nav li {
 	letter-spacing: .08em;
 	font-weight: bold;
+	width: 100px;
+	margin-top: 30px;
 }
 
 /*--- end Header ---*/
@@ -50,10 +149,15 @@ a {
 /*--- Spotlight ---*/
 
 .spotlight {
-	padding-top: 50px;
-	padding-left: 30px;
+	padding-top: 90px;
+	padding-left: 25px;
 	font-size: 2em;
 	font-weight: bold;
+	letter-spacing: .02em;
+}
+
+.big-image {
+	padding-top: 78px;
 }
 
 #collection {
@@ -61,14 +165,16 @@ a {
 	width: 480px;
 	height: 240px;
 	background-color: black;
-	color:white;
+	color: white;
 	margin-top: -120px;
 }
 
 .collection-text {
 	float: left;
-	padding-left: 240px;
-	font-size: 11px;
+	padding-left: 590px;
+	padding-bottom: 120px;
+	font-size: 1.2em;
+	line-height: 1.1em;
 }
 
 /*--- end Spotlight ---*/
@@ -91,8 +197,12 @@ a {
 	padding: 0;
 }
 
+img {
+	float: left;
+}
+
 .tees p, .decks p {
-	padding: 70px;
+	padding-top: 100px;
 	text-align: center;
 }
 
@@ -106,22 +216,77 @@ a {
 	margin-left: 240px;
 	border-top: 10px solid black;
 	border-bottom: 10px solid black;
-	margin-top: 600px;
-	margin-bottom: 100px;
+	margin-top: 100px;
+	margin-bottom: 200px;
 }
 
 .mission-text {
+	padding-top: 32px;
 	font-size: 2em;
 	font-weight: bold;
+	line-height: 1.1em;
+	padding-bottom: 32px;
 }
 
 /*--- end Mission ---*/
 
+/*--- Team ---*/
+
+#team {
+	float: left;
+	width: 960px;
+	height: 900px;
+	background-color: #363636;
+}
+
+#team p {
+	float: left;
+	width: 480px;
+	margin-top: 100px;
+	margin-left: 240px;
+	padding-top: 32px;
+	border-top: 10px solid black;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.raw-video {
+	float: left;
+	padding-left: 140px;
+	padding-top: 100px;
+}
+
+/*--- end Team ---*/
+
 /*--- Footer ---*/
 
+#footer {
+	position: relative;
+	clear: both;
+	bottom: 0;
+	width: 960px;
+	height: 480px;
+	background-color: black;
+	color: white;
+	font-size: .8em;
+	text-align: center;
+}
+
+#footer p {
+	font-size: .8em;
+	margin-top: 70px;
+	line-height: 1.8em;
+}
+
+.social-media {
+	float: left;
+	width: 480px;
+	margin-left: 240px;
+	margin-top: 100px;
+}
+
 .social-media ul {
-	padding-top: 30px;
-	margin-left: 280px;
+	padding-left: 80px;
 }
 
 .social-media li {
@@ -130,8 +295,7 @@ a {
 }
 
 .site-map ul {
-	padding-top: 100px;
-	margin-left: -40px;
+	padding-top: 240px;
 }
 
 .site-map li {
@@ -152,29 +316,12 @@ a {
 	padding-left: 10px;
 }
 
-#footer {
-	position: relative;
-	clear: both;
-	bottom: 0;
-	width: 960px;
-	height: 240px;
-	background-color: black;
-	color: white;
-	font-size: .8em;
-	text-align: center;
-}
-
-#footer p {
-	font-size: .8em;
-	margin-top: 30px;
-	line-height: 1.8em;
-}
-
 /*--- end Footer ---*/
 
 /*--- Product Detail ---*/
 
 #detail-shot {
+	margin-top: 240px;
 	padding-top: 60px;
 	height: 460px;
 	border-top: 10px solid black;
@@ -237,5 +384,4 @@ a {
 	margin: 10px;
 	text-align: center;
 }
-
 
