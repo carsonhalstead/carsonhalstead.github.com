@@ -86,7 +86,6 @@ body {
 
 ul {
 	list-style-type: none;
-	text-transform: uppercase;
 	font-size: .8em;
 }
 
@@ -137,10 +136,11 @@ a {
 }
 
 .main-nav li, .right-nav li {
-	letter-spacing: .08em;
-	font-weight: bold;
 	width: 100px;
 	margin-top: 30px;
+	letter-spacing: .08em;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 /*--- end Header ---*/
@@ -268,6 +268,10 @@ img {
 	line-height: 1.8em;
 }
 
+#footer a {
+	color: white;
+}
+
 .social-media {
 	float: left;
 	width: 480px;
@@ -291,6 +295,7 @@ img {
 .site-map li {
 	display: inline-block;
 	letter-spacing: .08em;
+	text-transform: uppercase;
 }
 
 .site-map a {
@@ -310,7 +315,7 @@ img {
 
 /*--- Product Detail ---*/
 
-#detail-shot {
+.details {
 	margin-top: 240px;
 	padding-top: 60px;
 	height: 460px;
@@ -319,16 +324,44 @@ img {
 	display: none;
 }
 
-#detail-shot img {
+.details img {
 	float: left;
 }
 
-.detail-2 {
+#detail-image {
+	float: left;
+}
+
+#detail-image1 {
+	float: left;
+}
+
+#detail-image2 {
+	float: left;
 	margin-top: 120px;
 	margin-left: -120px;
 }
 
-.item-text {
+#detail-title {
+	clear: both;
+	float: left;
+	margin-left: 80px;
+}
+
+#detail-price {
+	clear: both;
+	float: left;
+	margin-left: 80px;
+}
+
+#detail-components {
+	clear: both;
+	float: left;
+	margin-top: 40px;
+	margin-left: 80px;
+}
+
+#detail-description {
 	float: left;
 	width: 240px;
 	font-size: 11px;
@@ -336,46 +369,25 @@ img {
 	margin-top: 40px;
 }
 
-.product-title {
-	float: left;
-	margin-left: 120px;
-}
-
-.item-selectors {
+#detail-options {
 	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-#detail-components {
-	float: left;
-	margin-top: 40px;
-	margin-left: 120px;
-}
-
-.cart-button {
+#cart {
 	float: left;
 	margin-left: 60px;
 	height: 32px;
 	width: 120px;
 	background-color: black;
 	color: white;
+	text-transform: uppercase;
 }
 
-.cart-button p {
-	margin: 10px;
-	text-align: center;
-}
-
-.size-button, .qty-button {
+#size, #quantity {
 	float: left;
 	height: 30px;
 	width: 60px;
 	border: 1px solid black;
 }
-
-.size-button p, .qty-button p {
-	margin: 10px;
-	text-align: center;
-}
-
