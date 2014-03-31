@@ -46,7 +46,7 @@ $(function () {
 	var addCost = 0;
 
 	$("#addCart").click(function () {
-		$(".total").html(addCost += price);
+		$(".subtotal").html(addCost += products[name].price);
 	});
 });
 

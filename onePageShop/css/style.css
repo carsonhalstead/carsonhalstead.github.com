@@ -161,6 +161,7 @@ a {
 }
 
 #drop-down-cart p {
+	padding: 40px;
 	font-size: 16px;
 	letter-spacing: 1px;
 }
