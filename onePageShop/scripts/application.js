@@ -14,6 +14,8 @@ function changeDetails (name) {
 	$("#detail-description").text(products[name].description);
 	$("#detail-price").text("$" + products[name].price);
 	$("#detail-image").attr("src", products[name].image);
+	$("#detail-image1").attr("src", products[name].detail1);
+	$("#detail-image2").attr("src", products[name].detail2);
 };
 
 $(".product").click(function() {

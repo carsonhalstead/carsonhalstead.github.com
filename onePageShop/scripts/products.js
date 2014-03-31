@@ -4,6 +4,7 @@ var products = {
 		title: "Fishscale HFA Baseball Tee",
 		price: 25.00,
 		image: "images/hfa-tee-big.jpg",
+		detail1: "images/hfa-tee-blk-detail.jpg",
 		description: "For years, bass fishing has been one of our staple ways of making the best out of the rainy days not spent on a skateboard, so it is only fitting that we release a project within skateboarding as a show of thanks to the freshwater beasts that kept us having fun."
 	},
 
@@ -11,6 +12,8 @@ var products = {
 		title: "Fishscale Box Logo Tee",
 		price: 25.00,
 		image: "images/box-tee-big.jpg",
+		detail1: "images/box-tee-blk-detail.jpg",
+		detail2: "images/box-tee-grn-detail.jpg",
 		description: "For years, bass fishing has been one of our staple ways of making the best out of the rainy days not spent on a skateboard, so it is only fitting that we release a project within skateboarding as a show of thanks to the freshwater beasts that kept us having fun."
 	},
 
@@ -18,6 +21,8 @@ var products = {
 		title: "Loyalty Over Royalty Longsleeve",
 		price: 28.00,
 		image: "images/lor-tee-big.jpg",
+		detail1: "images/lor-tee-wht-detail.jpg",
+		detail2: "images/lor-tee-gry-detail.jpg",
 		description: "There is a reason why these words are present in our offerings every single season. We stand for things that run far deeper than the surface of skateboarding. A motto is not a motto unless you can live by it on a daily basis."
 	},
 
