@@ -1,30 +1,34 @@
 $(function() {
 
+var productName = null
+
 function showProduct (name) {
-	changeDetails(name);
+	var product = Products[name];
+	changeDetails(product);
+	productName = name;
 };
 
 $(".product").click(function() {
 	var name = $(this).data("product-id");
-	showProduct(name);	
-});
 
-function changeDetails (name) {
-	$("#detail-title").text(products[name].title);
-	$("#detail-description").text(products[name].description);
-	$("#detail-price").text("$" + products[name].price);
-	$("#detail-image").attr("src", products[name].image);
-	$("#detail-image1").attr("src", products[name].detail1);
-	$("#detail-image2").attr("src", products[name].detail2);
-};
-
-$(".product").click(function() {
 	if ($(".details").is(":hidden")) {
 		$(".details").slideDown();
-	} else {
+	} else if(name == productName) {
 		$(".details").slideUp();
 	}
+
+	showProduct(name);	
+
 });
+
+function changeDetails (product) {
+	$("#detail-title").text(product.title);
+	$("#detail-description").text(product.description);
+	$("#detail-price").text("$" + product.price);
+	$("#detail-image").attr("src", product.image);
+	$("#detail-image1").attr("src", product.detail1);
+	$("#detail-image2").attr("src", product.detail2);
+};
 
 $(".cart").click(function() {
 	if ($("#drop-down-cart").is(":hidden")) {
@@ -34,20 +38,8 @@ $(".cart").click(function() {
 	}
 });
 
-$(function () {
-	var addSomething = 0;
+function addItem () {
 
-	$("#add-cart").click(function() {
-		$("#counter").html(addSomething += 1);
-	});
-});
-
-$(function () {
-	var addCost = 0;
-
-	$("#addCart").click(function () {
-		$(".subtotal").html(addCost + products[name].price);
-	});
-});
+}
 
 });

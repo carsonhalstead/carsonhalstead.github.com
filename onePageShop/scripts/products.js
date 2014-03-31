@@ -1,4 +1,4 @@
-var products = {
+var Products = {
 	
 	hfa: {
 		title: "Fishscale HFA Baseball Tee",
