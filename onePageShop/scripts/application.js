@@ -6,6 +6,10 @@ function showProduct (name) {
 	var product = Products[name];
 	changeDetails(product);
 	productName = name;
+
+	$("#add-cart").click(function () {
+		addItem(name);
+	});
 };
 
 $(".product").click(function() {
@@ -18,7 +22,6 @@ $(".product").click(function() {
 	}
 
 	showProduct(name);	
-
 });
 
 function changeDetails (product) {
@@ -38,8 +41,35 @@ $(".cart").click(function() {
 	}
 });
 
-function addItem () {
+function addItem (name) {
+	var quantity = parseInt($("#detail-quantity").val());
 
+	if(!myCart[name]) { myCart[name] = 0; }
+	myCart[name] += quantity;
+
+	updateCart();
+}
+
+function updateCart () {
+	var totalQuantity = 0;
+	var totalCost = 0;
+
+	for(var key in myCart) {
+		var value = myCart[key];
+
+	totalQuantity += value;
+
+	totalCost += value*Products[key].price;
+	}
+	$("#counter").text(totalQuantity);
+
+	$(".subtotal").text(totalCost);
 }
 
 });
+
+var totalQuantity = 0;
+
+var totalCost = 0;
+
+var myCart = { };
