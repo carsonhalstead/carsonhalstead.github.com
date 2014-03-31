@@ -19,7 +19,7 @@ function changeDetails (name) {
 };
 
 $(".product").click(function() {
-	if ($(".details:first").is(":hidden")) {
+	if ($(".details").is(":hidden")) {
 		$(".details").slideDown();
 	} else {
 		$(".details").slideUp();

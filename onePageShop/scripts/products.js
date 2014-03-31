@@ -5,6 +5,7 @@ var products = {
 		price: 25.00,
 		image: "images/hfa-tee-big.jpg",
 		detail1: "images/hfa-tee-blk-detail.jpg",
+		detail2: "images/blank.jpg",
 		description: "For years, bass fishing has been one of our staple ways of making the best out of the rainy days not spent on a skateboard, so it is only fitting that we release a project within skateboarding as a show of thanks to the freshwater beasts that kept us having fun."
 	},
 
@@ -30,6 +31,8 @@ var products = {
 		title: "Loyalty Over Royalty Gold Edition",
 		price: 50.00,
 		image: "images/lor-deck-big.jpg",
+		detail1: "images/blank.jpg",
+		detail2: "images/blank.jpg",
 		description: "Seven ply maple construction. Ebony stained top veneer. Manufactured in the United States. Jessup griptape included."
 	},
 
@@ -37,6 +40,8 @@ var products = {
 		title: "Jonah Miller Tigerstripe Camo",
 		price: 50.00,
 		image: "images/camo-deck-big.jpg",
+		detail1: "images/blank.jpg",
+		detail2: "images/blank.jpg",
 		description: "Seven ply maple construction. Ebony stained top veneer. Manufactured in the United States. Jessup griptape included."
 	},
 
@@ -44,6 +49,8 @@ var products = {
 		title: "This is My Skateboard Gold Edition",
 		price: 50.00,
 		image: "images/tims-deck-big.jpg",
+		detail1: "images/blank.jpg",
+		detail2: "images/blank.jpg",
 		description: "Seven ply maple construction. Ebony stained top veneer. Manufactured in the United States. Jessup griptape included."
 	},
 
