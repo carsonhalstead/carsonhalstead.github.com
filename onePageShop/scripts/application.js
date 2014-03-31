@@ -26,4 +26,28 @@ $(".product").click(function() {
 	}
 });
 
+$(".cart").click(function() {
+	if ($("#drop-down-cart").is(":hidden")) {
+		$("#drop-down-cart").removeClass("hide");
+	} else {
+		$("#drop-down-cart").addClass("hide");
+	}
+});
+
+$(function () {
+	var addSomething = 0;
+
+	$("#add-cart").click(function() {
+		$("#counter").html(addSomething += 1);
+	});
+});
+
+$(function () {
+	var addCost = 0;
+
+	$("#addCart").click(function () {
+		$(".total").html(addCost += price);
+	});
+});
+
 });

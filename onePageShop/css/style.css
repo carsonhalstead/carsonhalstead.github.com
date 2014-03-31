@@ -102,6 +102,7 @@ a {
 	width: 960px;
 	height: 70px;
 	background-color: white;
+	z-index: 1;
 }
 
 #navigation a:hover {
@@ -140,6 +141,46 @@ a {
 	letter-spacing: .08em;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+#drop-down-cart {
+	position: fixed;
+	margin-top: 70px;
+	margin-left: 780px;
+	width: 180px;
+	background-color: white;
+	z-index: 2;
+}
+
+.hide {
+	display: none;
+}
+
+.cart:hover {
+	cursor: pointer;
+}
+
+#drop-down-cart p {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+#checkout {
+	float: left;
+	height: 32px;
+	width: 180px;
+	background-color: #c2c2c2;
+	color: white;
+	border: none;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	-webkit-transition: background-color .2s ease-in-out .2s;
+}
+
+#checkout:hover {
+	background-color: black;
 }
 
 /*--- end Header ---*/
@@ -218,14 +259,14 @@ img {
 .mission-text {
 	width: 480px;
 	padding-top: 32px;
-	font-size: 2em;
-	font-weight: bold;
-	line-height: 1.1em;
 	padding-bottom: 32px;
 	margin-top: 140px;
 	margin-left: 240px;
 	border-top: 10px solid black;
 	border-bottom: 10px solid black;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.3em;
 }
 
 /*--- end Mission ---*/
@@ -252,7 +293,7 @@ img {
 
 .raw-video {
 	float: left;
-	padding-left: 140px;
+	padding-left: 120px;
 	padding-top: 100px;
 }
 
@@ -382,11 +423,12 @@ img {
 #detail-description {
 	float: left;
 	width: 360px;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 1.1em;
 	padding-top: 30px;
 	border-top: 1px solid #c2c2c2;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.4em;
+	letter-spacing: 1px;
 }
 
 #detail-options {
