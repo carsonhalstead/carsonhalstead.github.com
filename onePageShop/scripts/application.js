@@ -33,7 +33,7 @@ function changeDetails (product) {
 	$("#detail-image2").attr("src", product.detail2);
 };
 
-$(".cart").hover(function() {
+$(".cart").click(function() {
 	if ($("#drop-down-cart").is(":hidden")) {
 		$("#drop-down-cart").removeClass("hide");
 	} else {
@@ -68,14 +68,15 @@ function updateCart () {
 
 function checkOut() {
   hideCart();
+
   var stripeKey = 'pk_test_V0SJ6QOh3rXO9s6Ysw0eHzzE';
 
-  var description = $("#cart").text();
-  var amount = totalCart() * 100;
+  var description = $(".subtotal").text();
+  var amount = totalCost() * 100;
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
-    image: 'http://shop-example.herokuapp.com/images/bird_bot.png',
+    image: '#',
     token: function(token, args) {
       $.post("/buy", {
         token: token.id,
