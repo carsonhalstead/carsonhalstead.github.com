@@ -66,6 +66,35 @@ function updateCart () {
 	$(".subtotal").text(totalCost);
 }
 
+function checkOut() {
+  hideCart();
+  var stripeKey = 'pk_test_V0SJ6QOh3rXO9s6Ysw0eHzzE';
+
+  var description = $("#cart").text();
+  var amount = totalCart() * 100;
+
+  var handler = StripeCheckout.configure({
+    key: stripeKey,
+    image: 'http://shop-example.herokuapp.com/images/bird_bot.png',
+    token: function(token, args) {
+      $.post("/buy", {
+        token: token.id,
+        amount: amount,
+        description: description
+      },function(data) {
+        alert(data.message);
+      });
+    }
+  });
+
+  handler.open({
+    name: 'Ready Amongst Willing',
+    description: description,
+    amount: amount
+  });
+
+}
+
 });
 
 var totalQuantity = 0;
