@@ -86,7 +86,7 @@ function checkOut() {
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
-    image: 'http://carsonhalstead.github.io/onepageshop/images/RAW-logo.jpg',
+    image: 'https://raw.githubusercontent.com/carsonhalstead/carsonhalstead.github.com/master/onePageShop/images/RAW-logo.jpg',
     token: function(token, args) {
       $.post("/buy", {
         token: token.id,
