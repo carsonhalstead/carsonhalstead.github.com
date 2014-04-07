@@ -66,6 +66,16 @@ function updateCart () {
 	$(".subtotal").text(totalCost);
 }
 
+$("#checkout").click(function() {
+  	checkOut();
+  });
+
+function hideCart() {
+	$("#cart-details").hide();
+}
+
+// Stripe Checkout
+
 function checkOut() {
   hideCart();
 
@@ -76,7 +86,7 @@ function checkOut() {
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
-    image: '#',
+    image: 'http://carsonhalstead.github.io/onepageshop/images/RAW-logo.jpg',
     token: function(token, args) {
       $.post("/buy", {
         token: token.id,
