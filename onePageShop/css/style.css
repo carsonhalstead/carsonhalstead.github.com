@@ -292,6 +292,7 @@ img {
 
 .raw-video {
 	float: left;
+	border: 0;
 	padding-left: 120px;
 	padding-top: 100px;
 }
