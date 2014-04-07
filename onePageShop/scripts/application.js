@@ -33,7 +33,7 @@ function changeDetails (product) {
 	$("#detail-image2").attr("src", product.detail2);
 };
 
-$(".cart").click(function() {
+$(".cart").hover(function() {
 	if ($("#drop-down-cart").is(":hidden")) {
 		$("#drop-down-cart").removeClass("hide");
 	} else {

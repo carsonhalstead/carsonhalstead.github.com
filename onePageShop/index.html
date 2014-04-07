@@ -31,16 +31,21 @@
 		<nav class="right-nav">
 			<ul>
 				<li class="cart">Cart (<span id="counter">0</span>)</li>
+
+					<!-- Drop down cart -->
+
+					<div id="drop-down-cart" class="hide">
+						<p>Subtotal: $<span class="subtotal">0</span></p>
+						<input type="submit" id="checkout" value="CHECKOUT" />
+					</div>
+					
 				<li><a href="#team">Team</a></li>
 			</ul>
 		</nav>
 
 	</div>
 
-	<div id="drop-down-cart" class="hide">
-			<p>Subtotal: $<span class="subtotal">0</span></p>
-			<input type="submit" id="checkout" value="CHECKOUT" />
-		</div>
+	
 
 <!-- Spotlight -->
 
@@ -109,7 +114,7 @@
 
 		<ul class="products">
 			<li class="product" data-product-id="gold"><img class="lor-gold" src="images/lor-gold.jpg" alt="Loyalty Over Royalty Deck"></li>
-			<li class="product"><div class="decks"><p>Decks</p></div></li>
+			<li><div class="decks"><p>Decks</p></div></li>
 			<li class="product" data-product-id="camo"><img class="tiger-camo" src="images/tiger-camo.jpg" alt="RAW Tiger Camo Deck"></li>
 			<li class="product" data-product-id="tims"><img class="tims-gold" src="images/tims-gold.jpg" alt="This Is My Skateboard Deck"></li>
 		</ul>
