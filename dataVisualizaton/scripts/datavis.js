@@ -1,5 +1,5 @@
 $(function () {
-	$( 'body' ).append( '<p>This right here</p>' );
+	$( 'body' ).hover( '.bar' ).append(data[0]);
 
 	for(var i = 0; i < data.length; i++ ) {
 

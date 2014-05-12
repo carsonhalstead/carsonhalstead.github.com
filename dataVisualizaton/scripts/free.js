@@ -1,16 +1,15 @@
 var tags = [
-  ["psd", 2833]
+  ["psd, photoshop", 3443]
+, ["icon, icons", 1962]
 , ["ui", 1648]
 , ["download", 1376]
-, ["icon", 1075]
-, ["icons", 887]
 , ["iphone", 668]
 , ["design", 667]
 , ["vector", 648]
 , ["button", 636]
-, ["photoshop", 610]
 , ["flat", 523]
 , ["ios", 496]
+/*
 , ["app", 480]
 , ["interface", 390]
 , ["web", 382]
@@ -98,4 +97,5 @@ var tags = [
 , ["chrome", 74]
 , ["webdesign", 74]
 , ["cloud", 71]
+*/
   ];
